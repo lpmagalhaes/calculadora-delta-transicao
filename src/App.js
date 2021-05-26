@@ -22,6 +22,7 @@ function App() {
 
 	const limpar = () => {
 		setPernas(pernasIniciais)
+		setResultado([])
 	}
 
 	const calcular = () => {
