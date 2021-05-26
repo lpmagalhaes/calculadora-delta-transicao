@@ -20,6 +20,10 @@ function App() {
 	const [strikeInicial, setStrikeInicial] = React.useState(20)
 	const [strikeFinal, setStrikeFinal] = React.useState(32)
 
+	const limpar = () => {
+		setPernas(pernasIniciais)
+	}
+
 	const calcular = () => {
 		let listaResultado = []
 
@@ -147,6 +151,10 @@ function App() {
 			<br />
 			<button type='button' onClick={() => calcular()}>
 				Calcular
+			</button>
+			<br />
+			<button type='button' onClick={() => limpar()}>
+				Limpar
 			</button>
 
 			{
